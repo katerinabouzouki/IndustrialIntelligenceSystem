@@ -1,10 +1,11 @@
-﻿using System;
+﻿using IndustrialIntelligenceSystem.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace IndustrialIntelligenceSystem.Models
 {
-    class Valve
+    public class Valve : IFaultable
     {
         public int Id { get; private set; }
         public string Name { get; set; }
